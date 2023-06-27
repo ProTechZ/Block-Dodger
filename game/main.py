@@ -63,6 +63,10 @@ class Game:
         self.__check_arrowkey_press(event, pygame.K_DOWN, 'down')
         self.__check_arrowkey_press(event, pygame.K_LEFT, 'left')
         self.__check_arrowkey_press(event, pygame.K_RIGHT, 'right')
+        self.__check_arrowkey_press(event, pygame.K_w, 'up')
+        self.__check_arrowkey_press(event, pygame.K_s, 'down')
+        self.__check_arrowkey_press(event, pygame.K_a, 'left')
+        self.__check_arrowkey_press(event, pygame.K_d, 'right')
 
     def __screen_loop_starter_code(self):
         self.clock.tick(self.ticks)
